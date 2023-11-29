@@ -1,0 +1,54 @@
+/* (A) SEARCH BOX */
+#the-filter {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+ 
+/* (B) LIST */
+#the-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#the-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+#the-list li:hover { background: #fffed6; }
+#the-list li.hide { display: none; }
+
+
+/* (X) DOES NOT MATTER */
+/* PAGE & BODY */
+* {
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* WIDGET */
+.widget-wrap {
+  min-width: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* FOOTER */
+#code-boxx {
+  font-weight: 600;
+  margin-top: 50px;
+}
+#code-boxx a {
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  background: #b90a0a;
+  color: #fff;
+}
