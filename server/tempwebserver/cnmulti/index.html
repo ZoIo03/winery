@@ -146,7 +146,21 @@
         <div class="content-inner">
           <shared></shared>
           <div id="boxTool_152" class="wse-box hidden-phone wse-personalize" objtype="5" style="position:absolute;" data-skin="standard">
-            <div class="wseI clr-bkg-72 clr-brd-62"></div>
+            <div class="wseI clr-bkg-72 clr-brd-62">
+              <video id="my_video_1" class="video-js vjs-default-skin" type="application/x-mpegURL" src="{M3U LINK}" width="653" height="350" controls=""></video>
+              
+              <script>
+                const video = document.querySelector('#my_video_1')
+                const src   = video.getAttribute('src')
+                const type  = video.getAttribute('type')
+                const player = videojs(video)
+                player.src({
+                src: src,
+                type: type
+                })
+              </script>
+
+            </div>
             <div class="wseSHBL"></div>
             <div class="wseSHBR"></div>
             <div class="wseSHTL"></div>
