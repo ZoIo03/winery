@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+.jersey-15-regular {
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color:white;
+}
+
+.search_container {
+    width: inherit;
+    padding: 0;
+}
+
+.search { 
+    font-family: monospace;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: none;
+    padding: 12px 10px;
+    background-color: #222;
+    color: white;
+    outline:none;
+}
+
+.infobutton { 
+    font-family: monospace;
+    position: sticky;
+    top: 0;
+    left: 100%;
+    width: 60px;
+    border: none;
+    padding: 12px 10px;
+    background-color: #333;
+    color: white;
+    cursor:pointer;
+}
+
+
+.infobutton:hover {
+    background-color: #8d1313;
+}
+
+.list{
+
+    margin: 10px;
+}
+
+a {
+    font-family: "Jersey 15", sans-serif;
+    font-size: 300%;
+    transition: 0.1s;
+}
+
+.listitem {
+    list-style-type: none;
+}
+
+a:link {color:#ffffff; text-decoration: none;}
+a:visited {color:#ffffff; text-decoration: none;}
+a:active {color:#ffffff; text-decoration: none;}
+
+a:hover {
+    color:#ff1111; 
+    text-decoration: underline; 
+    transition: 0.3s;
+    text-shadow: #ff1111 0px 0 50px;
+    font-size: 375%;
+}
+
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #ff0000 #000000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ff0000;
+    border-radius: 0px;
+    border: 0px solid #000000;
+  }
