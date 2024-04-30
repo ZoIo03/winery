@@ -4,17 +4,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/search.js"></script> 
+    <script src="js/blob.js"></script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');</style>
 </head>
 <body>
-<div class="search_container">
-    <input type="text" id="search" class="search" onkeyup="search()" placeholder="Search..." title="Search">
-    <button class="infobutton" onclick="location.href='http://www.example.com'" type="button">info</button>
+
+<div class="topbar">
+    <input type="text" id="search" class="search" onkeyup="search()" placeholder="search..." title="search">
+    <button class="infoButton" type="button">Info</button>
 </div>
 
-<div id="list" class="list">
+<div id="list" class="main">
     <li class="listitem"><a href="">MOCHA</a></li>
     <li class="listitem"><a href="">PIXYL</a></li>
 </div>
+
+<div id="blob"></div>
+<div id="blob-blur"></div>
 
 </body>
 </html>

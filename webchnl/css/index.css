@@ -1,66 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 
-.jersey-15-regular {
-    font-family: "Jersey 15", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}  
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color:white;
+    padding: 0%;
+    margin: 0%;
 }
 
-.search_container {
+.topbar {
     width: inherit;
+    height: 50px;
+
     padding: 0;
+    margin: 0;
 }
 
-.search { 
-    font-family: monospace;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    border: none;
-    padding: 12px 10px;
-    background-color: #222;
-    color: white;
-    outline:none;
+.infoButton {
+    width: 75px;
+    height: inherit;
+
+    padding: 0;
+    margin: 0;
+
+    background-color: rgba(23, 24, 27, 1);
+    border: 0;
+    color: rgba(173, 173, 173, 1);
+
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
-.infobutton { 
-    font-family: monospace;
-    position: sticky;
-    top: 0;
-    left: 100%;
-    width: 60px;
-    border: none;
-    padding: 12px 10px;
-    background-color: #333;
-    color: white;
-    cursor:pointer;
+.search {
+    width: max-content;
+    height: inherit;
+
+    padding-left: 10px;
+    margin: 0;
+
+    background-color: rgba(14, 16, 19, 1);
+    border: 0;
+    color:white;
+    outline: none;
+
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
-
-.infobutton:hover {
-    background-color: #8d1313;
-}
-
-.list{
-
+.main{
     margin: 10px;
+
+    list-style-type: none;
 }
 
 a {
-    font-family: "Jersey 15", sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-size: 300%;
+    font-weight: 1000;
     transition: 0.1s;
-}
-
-.listitem {
-    list-style-type: none;
 }
 
 a:link {color:#ffffff; text-decoration: none;}
@@ -75,26 +73,50 @@ a:hover {
     font-size: 375%;
 }
 
+/* === BLOB === */
 
+:root {
+	--blob-color: linear-gradient(
+		to right,
+		rgba(255, 101, 101, 0.2),
+		rgba(255, 101, 101, 0.2)
+	);
+	--blob-size: 400px;
+}
 
-/* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #ff0000 #000000;
-  }
+body {
+	background-color: #000;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 16px;
-  }
+#blob {
+	animation: rotate360 20s infinite;
+	background: var(--blob-color);
+	filter: blur(calc(var(--blob-size)/2.15));
+	
+	width: var(--blob-size);
+	height: var(--blob-size);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	translate: -50% -50%;
+	border-radius: 50%;
+}
 
-  *::-webkit-scrollbar-track {
-    background: #000000;
-  }
+@keyframes rotate360 {
+	from { rotate: 0deg; }
+	50% { scale: 1 1.15; }
+	to { rotate: 360deg; }
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #ff0000;
-    border-radius: 0px;
-    border: 0px solid #000000;
-  }
+#blob-blur {
+	width: 1%;
+	height: 1%;
+	position: absolute;
+	z-index: 2;
+	backdrop-filter: blur;
+}
