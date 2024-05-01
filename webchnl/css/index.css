@@ -13,25 +13,8 @@ body {
     margin: 0;
 }
 
-.infoButton {
-    width: 75px;
-    height: inherit;
-
-    padding: 0;
-    margin: 0;
-
-    background-color: rgba(23, 24, 27, 1);
-    border: 0;
-    color: rgba(173, 173, 173, 1);
-
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-}
-
 .search {
-    width: max-content;
+    width: 100%;
     height: inherit;
 
     padding-left: 10px;
