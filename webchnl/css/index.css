@@ -4,6 +4,16 @@ body {
     background-color: rgba(14, 16, 19, 1);
 }
 
+p {
+    color: #505050;
+
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 35px;
+}
+
 .container { 
     height: fit-content; /* Set your own height: percents, ems, whatever! */
     width: fit-content; /* Set your own width: percents, ems, whatever! */
@@ -21,6 +31,7 @@ body {
     font-size: 400%;
     font-style: italic;
     color:red;
+    margin: 0px;
 }
 
 .container button {
