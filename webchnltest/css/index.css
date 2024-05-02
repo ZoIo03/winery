@@ -1,0 +1,75 @@
+
+
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: rgba(14, 16, 19, 1);
+}
+
+.topbar {
+    position: -webkit-sticky; /* for browser compatibility */
+    position: sticky;
+    top: 0;
+
+    height: 50px;
+    font-size: 0;
+}
+
+.infoButton {
+    width: 75px;
+    height: inherit;
+
+    background-color: rgba(23, 24, 27, 1);
+    border: 0;
+    color: rgba(173, 173, 173, 1);
+
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.search {
+    width: calc(100% - 87px);
+    height: inherit;
+
+    padding-left: 10px;
+
+    background-color: black;
+    border: 0;
+    color:white;
+    outline: none;
+
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.main{
+    margin: 10px;
+    z-index: 1;
+
+    list-style-type: none;
+}
+
+a {
+    font-family: "DM Sans", sans-serif;
+    font-size: 300%;
+    font-weight: 1000;
+    transition: 0.1s;
+}
+
+a:link {color:#ffffff; text-decoration: none;}
+a:visited {color:#ffffff; text-decoration: none;}
+a:active {color:#ffffff; text-decoration: none;}
+
+a:hover {
+    color:#ff1111; 
+    text-decoration: underline; 
+    transition: 0.3s;
+    text-shadow: #ff1111 0px 0 50px;
+    font-size: 375%;
+}
+
+/* === BLOB === */
