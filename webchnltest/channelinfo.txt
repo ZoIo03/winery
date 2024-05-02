@@ -1,6 +1,14 @@
-// DoneBetter
+// Dijit (ONG)
 
-- Owners: @bnkdesigns
+- Owner: @puzzylpiece
+
+https://discord.gg/M5hst9qn3N
+
+--------------------------------
+
+// DoneBetter (ONG)
+
+- Owners: @bnkdesigns, @samstele
 
 - Stream: https://hls.wavecast.stream/hls/goodmorningukihaveafeelingthatitsgonnabeawonderfulday.m3u8
 
@@ -9,20 +17,18 @@ https://discord.gg/sxJ4eJrPwf
 https://twitter.com/heydonebetter
 https://youtube.com/donebetter
 
+--------------------------------
 
-
-
-// Mocha
+// Mocha (pixyl)
 
 - Owner: @hyoikreal
 
 https://discord.gg/FdZEBNBFgh
 https://twitter.com/mochaWebCh
 
+--------------------------------
 
-
-
-// Pixyl
+// Pixyl (pixyl)
 
 - Owner: @soulslimm
 
@@ -33,8 +39,7 @@ https://discord.pixyl.live
 https://twitter.com/watchpixyl
 https://twitch.tv/watchpixyl
 
-
-
+--------------------------------
 
 // Placid
 
@@ -44,5 +49,3 @@ https://discord.gg/7JvNDQkCE7
 https://twitter.com/WatchPlacid
 https://youtube.com/@WatchPlacid
 https://twitch.tv/watchplacidtv
-
-
