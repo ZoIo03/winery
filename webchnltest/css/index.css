@@ -55,21 +55,50 @@ body {
 
 a {
     font-family: "DM Sans", sans-serif;
-    font-size: 300%;
+    font-size: 200%;
     font-weight: 1000;
     transition: 0.1s;
 }
 
-a:link {color:#ffffff; text-decoration: none;}
-a:visited {color:#ffffff; text-decoration: none;}
-a:active {color:#ffffff; text-decoration: none;}
+.main a:link {color:#ffffff; text-decoration: none;}
+.main a:visited {color:#ffffff; text-decoration: none;}
+.main a:active {color:#ffffff; text-decoration: none;}
 
-a:hover {
+.main a:hover {
     color:#ff1111; 
     text-decoration: underline; 
     transition: 0.3s;
     text-shadow: #ff1111 0px 0 50px;
-    font-size: 375%;
+    font-size: 250%;
 }
 
+.wavecast a:hover {
+    color:#4242f5; 
+    text-shadow: #4242f5 0px 0 50px;
+}
+
+.pixyl a:hover {
+    color:#A456E5; 
+    text-shadow: #A456E5 0px 0 50px;
+}
+
+.label {
+    font-size: 0px;
+    position: fixed;
+}
+
+.ong a:hover {
+    color:#FE00FF; 
+    text-shadow: #FE00FF 0px 0 50px;
+}
+
+.svg {
+    width: 20px;
+    padding-bottom: 1.5px;
+}
+
+.ong .svg {
+    width: 20px;
+    padding-bottom: 7px;
+}
 /* === BLOB === */
