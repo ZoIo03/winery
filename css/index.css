@@ -4,6 +4,10 @@ body {
     margin:0;
 }
 
+.svg {
+    width: 100px;
+}
+
 .container {
     position:fixed;
     padding:0;
