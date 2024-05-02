@@ -1,68 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/index.css">
-    <script src="js/search.js"></script> 
-    <script src="js/blob.js"></script>
-    <style>@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');</style>
-    <title>webchannels</title>
-</head>
-<body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/search.js"></script>
+        <style>@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');</style>
+        <title>webchannels</title>
+    </head>
 
-<div class="topbar">
-    <input type="text" id="search" class="search" onkeyup="search()" placeholder="search..." title="search">
-</div>
+    <body>
+        <div class="topbar">
+            <input type="text" id="search" class="search" onkeyup="search()" placeholder="search..." title="search">
+        </div>
 
-<p>This is a preview of a new site. Coming Soon.</p>
+        <p>This is a preview of a new site. Coming Soon.</p>
 
-<div id="list" class="main">
-
-    <li class="listitem"><a href="https://www.twitch.tv/justgiomedia">ANIMANIA <embed class="svg" src="svg/twitch.svg"/></a></li>
-    <li class="listitem"><a href="https://discord.gg/rHeacMcUu2">BOOM! <embed class="svg" src="svg/discord.svg"/></a></li>
-    <li class="listitem"><a href="https://boomerang-reborn.neocities.org">BOOMERANG REBORN <embed class="svg" src="svg/globe.svg"/></a></li>
-    <li class="listitem"><a href="https://www.twitch.tv/boomerangwebsite">BOOMERANG WEB <embed class="svg" src="svg/twitch.svg"/></a></li>
-    <li class="listitem"><a href="https://www.twitch.tv/boxmedialive">BOXTV <embed class="svg" src="svg/twitch.svg"/></a></li>
-    <li class="listitem"><a href="https://sites.google.com/view/caribbeannetwork">CARIBBEAN <embed class="svg" src="svg/globe.svg"/></a></li>
-    <li class="listitem"><a href="https://twitch.tv/watchchroma">CHROMA <embed class="svg" src="svg/twitch.svg"/></a></li>
-    <li class="listitem"><a href="https://www.twitch.tv/cnclassiclive">CN CLASSIC <embed class="svg" src="svg/twitch.svg"/></a></li>
-    <li class="listitem"><a href="https://www.twitch.tv/boxmedialive">CN PLUS <embed class="svg" src="svg/twitch.svg"/></a></li>
-    <li class="listitem"><a href="deceased">CN TOO <embed class="svg" src="svg/x.svg"/></a></li>
-    <li class="listitem"><a href="https://www.twitch.tv/cartoonnetworku/">CN U <embed class="svg" src="svg/twitch.svg"/></a></li>
-    <li class="listitem"><a href="deceased">CN WEB <embed class="svg" src="svg/x.svg"/></a></li>
-    <li class="listitem"><a href="https://www.twitch.tv/watchplacidtv">CNX <embed class="svg" src="svg/x.svg"/></a></li>
-    <li class="listitem"><a href="https://comedynetwork.net">COMEDY NETWORK <embed class="svg" src="svg/globe.svg"/></a></li>
-    <li class="listitem"><a href="https://www.twitch.tv/csn_tv__">CSN <embed class="svg" src="svg/twitch.svg"/></a></li>
-    <li class="listitem"><a href="https://d3bugtv.neocities.org/debug.BLUE">DEBUG <embed class="svg" src="svg/globe.svg"/></a></li>
-    <li class="listitem"><a href="https://twitch.tv/dijitnetwork">DIJIT <embed class="svg" src="svg/twitch.svg"/></a></li>
-    <li class="listitem"><a href="https://donebetter.live">DONEBETTER <embed class="svg" src="svg/globe.svg"/></a></li>
-    <li class="listitem"><a href="https://old.evotv.live">EVO <embed class="svg" src="svg/globe.svg"/></a></li>
-    <li class="listitem"><a href="https://discord.gg/zcy9UkJw8e">EXODUS <embed class="svg" src="svg/discord.svg"/></a></li>
-    <li class="listitem"><a href="https://discord.gg/9DEnndXG">GAMER XD <embed class="svg" src="svg/discord.svg"/></a></li>
-    <li class="listitem"><a href="https://twitch.tv/graffiti_net">GRAFFITI <embed class="svg" src="svg/twitch.svg"/></a></li>
-    <li class="listitem"><a href="https://www.twitch.tv/nickelodeonjeremy">JEREMY <embed class="svg" src="svg/twitch.svg"/></a></li>
-    <li class="listitem"><a href="https://discord.gg/FdZEBNBFgh">MOCHA <embed class="svg" src="svg/discord.svg"/></a></li>
-    <li class="listitem"><a href="https://pixyl.live">MONOTOON <embed class="svg" src="svg/x.svg"/></a></li>
-    <li class="listitem"><a href="https://otvnchannel.neocities.org">NEOJETIX <embed class="svg" src="svg/globe.svg"/></a></li>
-    <li class="listitem"><a href="https://twitch.tv/nickelodeon2tv">NICKELODEON2 <embed class="svg" src="svg/twitch.svg"/></a></li>
-    <li class="listitem"><a href="https://www.twitch.tv/boxmedialive">NICK PLUS <embed class="svg" src="svg/twitch.svg"/></a></li>
-    <li class="listitem"><a href="https://discord.gg/FdZEBNBFgh">NICK TOO <embed class="svg" src="svg/x.svg"/></a></li>
-    <li class="listitem"><a href="https://discord.gg/FdZEBNBFgh">NICK WEB <embed class="svg" src="svg/x.svg"/></a></li>
-    <li class="listitem"><a href="https://www.twitch.tv/okanimeofficial">OK! <embed class="svg" src="svg/twitch.svg"/></a></li>
-    <li class="listitem"><a href="https://otvnchannel.neocities.org">OTVN <embed class="svg" src="svg/globe.svg"/></a></li>
-    <li class="listitem"><a href="https://pixyl.live">PIXYL <embed class="svg" src="svg/globe.svg"/></a></li>
-    <li class="listitem"><a href="https://www.twitch.tv/watchplacidtv">PLACID <embed class="svg" src="svg/twitch.svg"/></a></li>
-    <li class="listitem"><a href="https://secrttv.carrd.co">SECRT <embed class="svg" src="svg/globe.svg"/></a></li>
-    <li class="listitem"><a href="#">SHOCKER <embed class="svg" src="svg/globe.svg"/></a></li>
-    <li class="listitem"><a href="https://twitch.tv/sunshinetvnetwork">SUNSHINE <embed class="svg" src="svg/twitch.svg"/></a></li>
-    <li class="listitem"><a href="https://discord.gg/GVjbj2Gjwa">TOONCAST WEB <embed class="svg" src="svg/discord.svg"/></a></li>
-    <li class="listitem"><a href="https://thetvmocksguy.jbhosting.uk/">TTMG <embed class="svg" src="svg/globe.svg"/></a></li>
-    <li class="listitem"><a href="https://www.twitch.tv/tubntwitch">TUBN <embed class="svg" src="svg/twitch.svg"/></a></li>
-
-</div>
-
-<div id="blob"></div>
-<div id="blob-blur"></div>
-
-</body>
+        <div id="list" class="main">
+            <li class="listitem"><a href="https://www.twitch.tv/justgiomedia">ANIMANIA <embed class="svg" src="svg/twitch.svg"/></a></li>
+            <li class="listitem"><a href="https://discord.gg/rHeacMcUu2">BOOM! <embed class="svg" src="svg/discord.svg"/></a></li>
+            <li class="listitem"><a href="https://boomerang-reborn.neocities.org">BOOMERANG REBORN <embed class="svg" src="svg/globe.svg"/></a></li>
+            <li class="listitem"><a href="https://www.twitch.tv/boomerangwebsite">BOOMERANG WEB <embed class="svg" src="svg/twitch.svg"/></a></li>
+            <li class="listitem"><a href="https://www.twitch.tv/boxmedialive">BOXTV <embed class="svg" src="svg/twitch.svg"/></a></li>
+            <li class="listitem"><a href="https://sites.google.com/view/caribbeannetwork">CARIBBEAN <embed class="svg" src="svg/globe.svg"/></a></li>
+            <li class="listitem"><a href="https://twitch.tv/watchchroma">CHROMA <embed class="svg" src="svg/twitch.svg"/></a></li>
+            <li class="listitem"><a href="https://www.twitch.tv/cnclassiclive">CN CLASSIC <embed class="svg" src="svg/twitch.svg"/></a></li>
+            <li class="listitem"><a href="https://www.twitch.tv/boxmedialive">CN PLUS <embed class="svg" src="svg/twitch.svg"/></a></li>
+            <li class="listitem"><a href="deceased">CN TOO <embed class="svg" src="svg/x.svg"/></a></li>
+            <li class="listitem"><a href="https://www.twitch.tv/cartoonnetworku/">CN U <embed class="svg" src="svg/twitch.svg"/></a></li>
+            <li class="listitem"><a href="deceased">CN WEB <embed class="svg" src="svg/x.svg"/></a></li>
+            <li class="listitem"><a href="https://www.twitch.tv/watchplacidtv">CNX <embed class="svg" src="svg/x.svg"/></a></li>
+            <li class="listitem"><a href="https://comedynetwork.net">COMEDY NETWORK <embed class="svg" src="svg/globe.svg"/></a></li>
+            <li class="listitem"><a href="https://www.twitch.tv/csn_tv__">CSN <embed class="svg" src="svg/twitch.svg"/></a></li>
+            <li class="listitem"><a href="https://d3bugtv.neocities.org/debug.BLUE">DEBUG <embed class="svg" src="svg/globe.svg"/></a></li>
+            <li class="listitem"><a href="https://twitch.tv/dijitnetwork">DIJIT <embed class="svg" src="svg/twitch.svg"/></a></li>
+            <li class="listitem"><a href="https://donebetter.live">DONEBETTER <embed class="svg" src="svg/globe.svg"/></a></li>
+            <li class="listitem"><a href="https://old.evotv.live">EVO <embed class="svg" src="svg/globe.svg"/></a></li>
+            <li class="listitem"><a href="https://discord.gg/zcy9UkJw8e">EXODUS <embed class="svg" src="svg/discord.svg"/></a></li>
+            <li class="listitem"><a href="https://discord.gg/9DEnndXG">GAMER XD <embed class="svg" src="svg/discord.svg"/></a></li>
+            <li class="listitem"><a href="https://twitch.tv/graffiti_net">GRAFFITI <embed class="svg" src="svg/twitch.svg"/></a></li>
+            <li class="listitem"><a href="https://www.twitch.tv/nickelodeonjeremy">JEREMY <embed class="svg" src="svg/twitch.svg"/></a></li>
+            <li class="listitem"><a href="https://discord.gg/FdZEBNBFgh">MOCHA <embed class="svg" src="svg/discord.svg"/></a></li>
+            <li class="listitem"><a href="https://pixyl.live">MONOTOON <embed class="svg" src="svg/x.svg"/></a></li>
+            <li class="listitem"><a href="https://otvnchannel.neocities.org">NEOJETIX <embed class="svg" src="svg/globe.svg"/></a></li>
+            <li class="listitem"><a href="https://twitch.tv/nickelodeon2tv">NICKELODEON2 <embed class="svg" src="svg/twitch.svg"/></a></li>
+            <li class="listitem"><a href="https://www.twitch.tv/boxmedialive">NICK PLUS <embed class="svg" src="svg/twitch.svg"/></a></li>
+            <li class="listitem"><a href="https://discord.gg/FdZEBNBFgh">NICK TOO <embed class="svg" src="svg/x.svg"/></a></li>
+            <li class="listitem"><a href="https://discord.gg/FdZEBNBFgh">NICK WEB <embed class="svg" src="svg/x.svg"/></a></li>
+            <li class="listitem"><a href="https://www.twitch.tv/okanimeofficial">OK! <embed class="svg" src="svg/twitch.svg"/></a></li>
+            <li class="listitem"><a href="https://otvnchannel.neocities.org">OTVN <embed class="svg" src="svg/globe.svg"/></a></li>
+            <li class="listitem"><a href="https://pixyl.live">PIXYL <embed class="svg" src="svg/globe.svg"/></a></li>
+            <li class="listitem"><a href="https://www.twitch.tv/watchplacidtv">PLACID <embed class="svg" src="svg/twitch.svg"/></a></li>
+            <li class="listitem"><a href="https://secrttv.carrd.co">SECRT <embed class="svg" src="svg/globe.svg"/></a></li>
+            <li class="listitem"><a href="#">SHOCKER <embed class="svg" src="svg/globe.svg"/></a></li>
+            <li class="listitem"><a href="https://twitch.tv/sunshinetvnetwork">SUNSHINE <embed class="svg" src="svg/twitch.svg"/></a></li>
+            <li class="listitem"><a href="https://discord.gg/GVjbj2Gjwa">TOONCAST WEB <embed class="svg" src="svg/discord.svg"/></a></li>
+            <li class="listitem"><a href="https://thetvmocksguy.jbhosting.uk/">TTMG <embed class="svg" src="svg/globe.svg"/></a></li>
+            <li class="listitem"><a href="https://www.twitch.tv/tubntwitch">TUBN <embed class="svg" src="svg/twitch.svg"/></a></li>
+        </div>
+    </body>
 </html>
