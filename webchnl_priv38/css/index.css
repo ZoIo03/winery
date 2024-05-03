@@ -4,8 +4,6 @@ body {
     background-color: rgba(14, 16, 19, 1);
 } 
 
-<<<<<<< Updated upstream
-=======
 .versioninfo {
     position: fixed;
     bottom: 0px;
@@ -21,8 +19,6 @@ body {
     user-select: none;
 }
 
-
->>>>>>> Stashed changes
 .topbar {
     z-index: 1;
     position: -webkit-sticky;
