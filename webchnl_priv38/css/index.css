@@ -19,6 +19,7 @@ body {
     user-select: none;
 }
 
+
 .topbar {
     z-index: 1;
     position: -webkit-sticky;
@@ -61,7 +62,7 @@ body {
 
     cursor: pointer;
 
-    transition: 100ms;
+    transition: 0.05s;
 }
 
 .infoButton:hover {
@@ -69,7 +70,7 @@ body {
 
     color: #ffffff;
 
-    transition: 100ms;
+    transition: 0.1s;
 }
 
 .main{
