@@ -4,6 +4,21 @@ body {
     background-color: rgba(14, 16, 19, 1);
 } 
 
+.versioninfo {
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+    float: right;
+    z-index: 2;
+
+    color:rgba(255, 255, 255, 0.2);
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    user-select: none;
+}
+
 .topbar {
     z-index: 1;
     position: -webkit-sticky;
