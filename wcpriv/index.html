@@ -14,12 +14,20 @@
     </head>
     <body>
         <div class="versioninfo">
-            <p>webchnl pre-alpha 2</p>
+            <p>webchnl pre-alpha 3</p>
         </div>
+
+        <dialog data-modal class="modal">
+            <div class="modal_top"><button data-close-modal>×</button></div>
+            <div class="modal_content">
+              <h1>webchnl pre-alpha 3</h1>
+              <p>made by @soulslimm</p>
+            </div>
+        </dialog>
 
         <div class="topbar">
             <input type="text" id="search" class="search" onkeyup="search()" placeholder="search..." title="search">
-            <button class="infoButton" onclick="location.href='info'" type="button">Info</button>
+            <button data-open-modal class="infoButton">Info</button>
         </div>
 
         <div id="list" class="main">
@@ -38,5 +46,7 @@
             <li><a href="watch/shocker">SHOCKER </a></li>
             <li><a href="watch/ttmg">TTMG </a></li>
         </div>
+
+        <script src="js/modal.js"></script>
     </body>
 </html>

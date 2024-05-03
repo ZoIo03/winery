@@ -19,6 +19,68 @@ body {
     user-select: none;
 }
 
+.modal {
+    padding: 0;
+    width: 350px;
+    height: 400px;
+    background-color: rgba(23, 24, 27, 1);
+    border: 0;
+  }
+  
+  .modal_top {
+    text-align: right;
+    padding: 0;
+  }
+  
+  .modal_top button {
+    background-color: transparent;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    margin-top: -5px;
+  
+    font-family: "DM Sans", sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    color: white;
+    transition: 0.1s;
+    outline: none;
+  }
+  
+  .modal_top button:hover {
+    color: red;
+    font-weight: 300;
+    transition: 0.1s;
+    cursor: pointer;
+  }
+  
+  .modal_content {
+    padding: 10px;
+    color: white;
+  
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .modal_content h1{
+    font-size: 200%;
+    font-weight: 800;
+    text-align: center;
+    transition: 0.1s;
+  }  
+
+  .modal_content h1:hover{
+    color:#ff1111;
+    transition:0.1s
+  }
+
+dialog::backdrop {
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .topbar {
     z-index: 1;
     position: -webkit-sticky;
@@ -58,6 +120,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+    outline: none;
 
     cursor: pointer;
 
