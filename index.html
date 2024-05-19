@@ -3,15 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pixyl | Coming Soon.</title>
-    <style>@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');</style>
+    <title>pixyl | Coming Soon</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
 </head>
 <body>
     <div class="container">
-        <spans><embed class="svg" src="/svg/pixyl.svg"/></span>
-        <spans><h1>COMING SOON.</h1></span>
-        <div><a href="https://discord.pixyl.live"><p>Join the Discord!</p></a></div>
+
+        <div class="topbar">
+            <div class="logo_container">
+                <embed class="logo" src="svg/pixyl.svg"/>
+            </div>
+            <embed class="transition" src="svg/transition.svg"/>
+            <div class="button_container">
+                <button>WATCH</button>
+                <button>NEWS</button>
+                <button onclick="location.href='https://discord.pixyl.live';">DISCORD</button>
+            </div>
+        </div>
+
+        <div class="plyr__video-embed" id="player">
+            <iframe
+              src="https://www.youtube.com/embed/JH7uVz1vYWQ?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+              allowfullscreen
+              allowtransparency
+              allow="autoplay"
+            ></iframe>
+        </div>
     </div>
+
+    <script>
+        const player = new Plyr('#player');
+    </script>
 </body>
 </html>
