@@ -93,6 +93,8 @@ dialog::backdrop {
 
 .search {
     width: calc(100% - 87px);
+    width: -webkit-calc(100% - 87px);
+    width: -moz-calc(100% - 87px);
     height: inherit;
 
     padding-left: 10px;
