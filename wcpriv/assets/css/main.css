@@ -12,6 +12,10 @@ li {
     line-height: 8px
 }
 
+li h1 {
+    line-height: 1;
+}
+
 .versioninfo {
     position: fixed;
     bottom: 4px;
