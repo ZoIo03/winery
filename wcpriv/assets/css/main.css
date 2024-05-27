@@ -7,10 +7,15 @@ body {
     font-family: "DM Sans", sans-serif;
 }
 
+li {
+    list-style: none;
+    line-height: 8px
+}
+
 .versioninfo {
     position: fixed;
-    bottom: 0px;
-    right: 20px;
+    bottom: 4px;
+    right: 32px;
     float: right;
     z-index: 2;
 
@@ -57,6 +62,14 @@ body {
     padding: 0;
     background-color: transparent;
     border: 0;
+    color:#5F6368;
+    transition: 0.2s
+}
+
+.menubutton:hover {
+    color:#9a0c0c;
+    cursor: pointer;
+    transition: 0.2s
 }
 
 .main {
@@ -67,13 +80,47 @@ body {
 }
 
 .item {
+    display: flex;
+    box-sizing: border-box;
     width: 100%;
     height: 100px;
+    padding: 12px;
     border-radius: 12px;
     background-color: rgba(14, 16, 19, 1);
     transition: 0.1s;
 }
 
+.channeldetails {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.buttoncontainer {
+    display: flex;
+    align-items: end;
+    margin-left: auto;
+}
+
+.buttoncontainer button {
+    border: none;
+    background-color: #EE0F0F;
+    color: white;
+    padding: 8px;
+    padding-inline: 11px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.buttoncontainer button:hover {
+    background-color:#9a0c0c;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.item img{width: 76px; border-radius: 12px;}
+.item p{font-size: 16px; color: rgba(255, 255, 255, 0.5);}
+.item h1{font-size: 20px;}
 .item:hover {background-color: rgb(19, 14, 14); transition: 0.1s}
 
 ::-moz-selection { /* Code for Firefox */

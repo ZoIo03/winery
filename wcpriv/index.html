@@ -16,34 +16,41 @@
     <div class="versioninfo">
         <p>webchnl pre-alpha 4</p>
     </div>
+    <div class="topbar">
+        <img class="icon" src="assets/svg/webchnl_icon.svg" alt="webchnl icon"/>
+        <input class="search" type="text" id="Search" onkeyup="myFunction()" placeholder="Search..." title="Type in a name">
+        <button class="menubutton" type="button" id="menu-button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>                
+        </button>
+    </div>
 
+    <div class="main">
+        <div class="item">
+            <div class="channeldetails">
+                <p>222</p>
+                <img src="assets/img/channelicons/pixyl.png" alt="yeah">
+                <li>
+                    <h1>Boomerang Reborn</h1>
+                    <p>webchnl</p>
+                </li>
+            </div>
+            <div class="buttoncontainer">
+                <a href="/watch/player.html"><button>▶</button></a>
+            </div>
+
+        </div>
+    </div>
     <script>
         const button = document.getElementById('menu-button');
 
         button.addEventListener('click', function() {
         // Your button click action here (e.g., alert message)
-        alert('Button clicked!');
+        alert('this shit dont work yet my nigga im sorry');
     });
     </script>
-
-    <div class="topbar">
-        <img class="icon" src="assets/svg/webchnl_icon.svg" alt="webchnl icon"/>
-        <input class="search" type="text" id="Search" onkeyup="myFunction()" placeholder="Search..." title="Type in a name">
-        <button class="menubutton" type="button">
-            <img src="assets/svg/menu.svg" id="menu-button" alt="webchnl icon"/>
-        </button>
-    </div>
-
-    <div class="main">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-    </div>
 </body>
 </html>
