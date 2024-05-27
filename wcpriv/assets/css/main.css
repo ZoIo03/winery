@@ -20,7 +20,10 @@ body {
     font-weight: 500;
     font-style: normal;
     user-select: none;
+    transition: 0.1s;
 }
+
+.versioninfo:hover{color: maroon; transition: 0.1s; cursor:help}
 
 .topbar {
     position: fixed;
@@ -28,12 +31,15 @@ body {
     width: 100%;
     box-sizing: border-box;
     display: flex;
-    gap:24px;
+    gap: 24px;
     height: 48px;
-    padding-block: 12px;
+    padding-block: 8px;
     padding-inline: 24px;
     background-color: rgba(14, 16, 19, 1);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
 }
+
+.icon {width: 32px}
 
 .search {
     box-sizing: border-box;
@@ -44,5 +50,38 @@ body {
     padding: 12px;
     background-color: rgba(23, 24, 27, 1);
     color: rgba(244, 244, 244, 1);
-    grid-column: 2 / 3;
+    outline: none;
+}
+
+.menubutton {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+}
+
+.main {
+    display:grid;
+    gap: 12px;
+    padding: 24px;
+    padding-top: 70px;
+}
+
+.item {
+    width: 100%;
+    height: 100px;
+    border-radius: 12px;
+    background-color: rgba(14, 16, 19, 1);
+    transition: 0.1s;
+}
+
+.item:hover {background-color: rgb(19, 14, 14); transition: 0.1s}
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: red;
+}
+  
+::selection {
+    color: white;
+    background: red;
 }
