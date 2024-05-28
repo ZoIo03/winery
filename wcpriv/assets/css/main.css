@@ -44,7 +44,6 @@ a:hover {color: rgb(255, 105, 105); transition: 0.2s;}
     border-radius: 12px;
     border: 0;
     padding: 24px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 .modal_top {
@@ -92,6 +91,9 @@ dialog::backdrop {
 }
 
 .icon {width: 32px}
+.groupicon {
+    height: 12px;
+}
 
 .search {
     box-sizing: border-box;
@@ -137,6 +139,11 @@ dialog::backdrop {
     transition: 0.1s;
 }
 
+.channelnumber {
+    width: 24px;
+    text-align: center;
+}
+
 .channeldetails {
     display: flex;
     align-items: center;
@@ -158,10 +165,7 @@ dialog::backdrop {
     border-radius: 8px;
     transition: 0.2s;
     color: white;
-}
-
-.buttoncontainer svg {
-    width: 16px;
+    font-family: "DM Sans", sans-serif;
 }
 
 .buttoncontainer button:hover {
@@ -170,7 +174,30 @@ dialog::backdrop {
     transition: 0.2s;
 }
 
-.item img{width: 76px; border-radius: 12px;}
+.buttoncontainer svg {
+    width: 16px;
+}
+
+.modalbutton {
+    border: none;
+    background-color: #EE0F0F;
+    padding: 4px;
+    padding-inline: 10px;
+    border-radius: 8px;
+    transition: 0.2s;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.modalbutton:hover {
+    background-color:#9a0c0c;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.channelicon{width: 76px; border-radius: 12px;}
 .item p{font-size: 16px; color: rgba(255, 255, 255, 0.5);}
 .item h1{font-size: 20px;}
 .item:hover {background-color: rgb(19, 14, 14); transition: 0.1s}
