@@ -71,10 +71,7 @@ a:hover {color: rgb(255, 105, 105); transition: 0.2s;}
     cursor: pointer;
 }
 
-dialog::backdrop {
-    backdrop-filter: blur(2px);
-    background-color: rgba(0, 0, 0, 0.5);
-}
+dialog::backdrop {background-color: rgba(0, 0, 0, 0.5);}
 
 .topbar {
     position: fixed;
