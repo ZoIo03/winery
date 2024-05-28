@@ -6,7 +6,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>webchnl</title>
     <meta content="webchnl" property="og:title" />
-    <meta content="webchnl pre-alpha 4" property="og:description" />
+    <meta content="webchnl pre-alpha 5" property="og:description" />
     <meta content="https://pixyl.live/webchnl" property="og:url" />
     <meta content="assets/img/embed_banner.png" property="og:image" />
     <meta content="#0e1013" data-react-helmet="true" name="theme-color" />
@@ -16,12 +16,25 @@
 </head>
 <body>
     <div class="versioninfo">
-        <p>webchnl pre-alpha 4</p>
+        <p>webchnl pre-alpha 5</p>
     </div>
+
+    <dialog data-modal class="modal">
+        <div class="modal_top"><button data-close-modal>×</button></div>
+        <div class="modal_content">
+          <h1>webchnl pre-alpha 5</h1>
+          <p>made by <a href="watch/player.html">@soulslimm</a></p>
+          <div class="buttoncontainer">
+            <a href="watch/player.html"><button>Discord</button></a>
+        </div>
+
+        </div>
+    </dialog>
+
     <div class="topbar">
         <img class="icon" src="assets/svg/webchnl_icon.svg" alt="webchnl icon"/>
-        <input class="search" type="text" id="Search" onkeyup="myFunction()" placeholder="Search..." title="Type in a name">
-        <button class="menubutton" type="button" id="menu-button">
+        <input class="search" type="text" id="search" onkeyup="search()" placeholder="Search..." title="Search...">
+        <button data-open-modal class="menubutton" type="button" id="menu-button">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -41,18 +54,14 @@
                 </li>
             </div>
             <div class="buttoncontainer">
-                <a href="watch/player.html"><button>▶</button></a>
+                <a href="watch/player.html"><button><?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000" stroke-width="1.5"><path d="M6.90588 4.53682C6.50592 4.2998 6 4.58808 6 5.05299V18.947C6 19.4119 6.50592 19.7002 6.90588 19.4632L18.629 12.5162C19.0211 12.2838 19.0211 11.7162 18.629 11.4838L6.90588 4.53682Z" fill="#ffffff" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></a>
             </div>
 
         </div>
     </div>
-    <script>
-        const button = document.getElementById('menu-button');
 
-        button.addEventListener('click', function() {
-        // Your button click action here (e.g., alert message)
-        alert('this shit dont work yet my nigga im sorry');
-    });
     </script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/search.js"></script>
 </body>
 </html>
