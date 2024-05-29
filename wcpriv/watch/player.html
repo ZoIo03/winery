@@ -13,8 +13,43 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="icon" href="https://pixyl.live/wcpriv/assets/svg/webchnl_icon.svg">
     <link rel="manifest" href="https://pixyl.live/wcpriv/manifest.json">
+    <link rel="stylesheet" href="https://cdn.vidstack.io/player/theme.css" />
+    <link rel="stylesheet" href="https://cdn.vidstack.io/player/video.css" />
 </head>
 <body>
+    <div class="versioninfo">
+        <p>webchnl pre-alpha 5</p>
+    </div>
+
+    <div class="topbar">
+        <a href="https://pixyl.live/wcpriv"><button class="menubutton"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M18 6 6 18M6 6l12 12"/>
+          </svg>
+        </button></a>
+        <p>pixyl</p>
+    </div>
+
+    <div class="main">
+
+        <div class="player" id="target"></div>      
+        <script type="module">
+            import { VidstackPlayer, VidstackPlayerLayout } from 'https://cdn.vidstack.io/player';
+          
+            const player = await VidstackPlayer.create({
+              target: '#target',
+              title: 'player',
+              src: 'http://143.244.60.30/NICKELODEON/index.m3u8',
+              poster: 'https://media.discordapp.net/attachments/1110676903133716484/1245442870174027816/Frame_32.png?ex=6658c48f&is=6657730f&hm=2ab110421cfc823bf014aa20585d593fe7a1c3f2b2bb874c80fed17e32d3aee5&=&format=webp&quality=lossless&width=1100&height=618',
+              layout: new VidstackPlayerLayout({
+              }),
+            });
+          </script>
+
+        <div class="info">
+            <h1>About Channel</h1>
+            <p>Description</p>
+        </div>
+    </div>
 
 </body>
 </html>
