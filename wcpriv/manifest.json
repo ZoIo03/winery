@@ -18,11 +18,11 @@
         "sizes": "512x512"
       }
     ],
-    "id": "/",
-    "start_url": "/",
+    "id": "/wcpriv",
+    "start_url": "/wcpriv",
     "background_color": "#0E1013",
     "display": "standalone",
-    "scope": "/",
+    "scope": "/wcpriv",
     "theme_color": "#0E1013",
     "description": "Watch your favorite web-channels."
   }
