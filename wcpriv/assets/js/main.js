@@ -24,8 +24,8 @@ fetch("assets/json/channels.json")
       const link = card.querySelector("[button-link]")
       channelNumber.textContent = channel.channel_number
       name.textContent = channel.name
-      icon.setAttribute("src", channel.icon);
-      groupIcon.setAttribute("src", channel.group_icon);
+      icon.setAttribute("src", "assets/img/channelicons/"+channel.icon+".png");
+      groupIcon.setAttribute("src", "assets/svg/group/"+channel.group_icon+".svg");
       link.setAttribute("href", channel.link);
       channelCardContainer.append(card)
       return { channelNumber: channel.number, name: channel.name, element: card }
