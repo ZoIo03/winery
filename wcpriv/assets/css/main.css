@@ -16,6 +16,10 @@ li h1 {
     line-height: 1;
 }
 
+.hidden {
+    display: none;
+}
+
 a:link {color:#EE0F0F; transition: 0.2s;}
 a:visited {color:#9a0c0c;}
 a:hover {color: rgb(255, 105, 105); transition: 0.2s;}
@@ -136,7 +140,7 @@ dialog::backdrop {background-color: rgba(0, 0, 0, 0.5);}
     transition: 0.1s;
 }
 
-.channelnumber {
+.channelnumbercontainer {
     width: 24px;
     text-align: center;
 }

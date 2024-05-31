@@ -6,26 +6,28 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>webchnl</title>
     <meta content="webchnl" property="og:title" />
-    <meta content="webchnl pre-alpha 5" property="og:description" />
+    <meta content="webchnl pre-alpha 6" property="og:description" />
     <meta content="https://pixyl.live/webchnl" property="og:url" />
     <meta content="assets/img/embed_banner.png" property="og:image" />
     <meta content="#0e1013" data-react-helmet="true" name="theme-color" />
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="icon" href="assets/svg/webchnl_icon.svg">
     <link rel="manifest" href="https://pixyl.live/wcpriv/manifest.json">
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/modal.js" defer></script>
 </head>
 <body>
     <div class="versioninfo">
-        <p>webchnl pre-alpha 5</p>
+        <p>webchnl pre-alpha 6</p>
     </div>
 
     <dialog data-modal class="modal">
         <div class="modal_top"><button data-close-modal>×</button></div>
         <div class="modal_content">
-          <h1>webchnl pre-alpha 5</h1>
+          <h1>webchnl pre-alpha 6</h1>
           <p>made by <a href="watch/player.html">@soulslimm</a></p>
           <div>
-            <a href="https://discord.gg/dwH2WkCeWC"><button class="modalbutton">Discord</button></a>
+            <a href="https://discord.gg/WkUWnNhJdk"><button class="modalbutton">Discord</button></a>
         </div>
 
         </div>
@@ -33,87 +35,28 @@
 
     <div class="topbar">
         <img class="icon" src="assets/svg/webchnl_icon.svg" alt="webchnl icon"/>
-        <input class="search" type="text" id="search" onkeyup="search()" placeholder="Search..." title="Search...">
+        <input class="hidden" type="search" id="search" search-bar placeholder="Search..." title="Search...">
+        search doesnt work yet, sorry
         <button data-open-modal class="menubutton" type="button" id="menu-button">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>                
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>                
         </button>
     </div>
 
-    <div class="main">
-        <div class="item">
-            <div class="channeldetails">
-                <div class="channelnumber"><p>101</p></div>
-                <img class="channelicon" src="assets/img/channelicons/chroma.png" alt="yeah">
-                <li>
-                    <h1>Chroma <img class="groupicon" src="assets/svg/group/ong.svg" alt=""></h1>
-                </li>
+    <div class="main" data-item-container>
+        <template data-channel-template>
+            <div class="item">
+                <div class="channeldetails">
+                    <div class="channelnumbercontainer"><p channel-number></p></div>
+                    <img class="channelicon" channel-icon src="">
+                    <h1 channel-name></h1>
+                    <img class="groupicon" group-icon src="">
+                </div>
+                <div class="buttoncontainer">
+                    <a button-link href="watch/player.html"><button><?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000" stroke-width="1.5"><path d="M6.90588 4.53682C6.50592 4.2998 6 4.58808 6 5.05299V18.947C6 19.4119 6.50592 19.7002 6.90588 19.4632L18.629 12.5162C19.0211 12.2838 19.0211 11.7162 18.629 11.4838L6.90588 4.53682Z" fill="#ffffff" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></a>
+                </div>
             </div>
-            <div class="buttoncontainer">
-                <a href="watch/player.html"><button><?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000" stroke-width="1.5"><path d="M6.90588 4.53682C6.50592 4.2998 6 4.58808 6 5.05299V18.947C6 19.4119 6.50592 19.7002 6.90588 19.4632L18.629 12.5162C19.0211 12.2838 19.0211 11.7162 18.629 11.4838L6.90588 4.53682Z" fill="#ffffff" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></a>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="channeldetails">
-                <div class="channelnumber"><p>102</p></div>
-                <img class="channelicon" src="assets/img/channelicons/cnmena+.png" alt="yeah">
-                <li>
-                    <h1>CN MENA+</h1>
-                </li>
-            </div>
-            <div class="buttoncontainer">
-                <a href="watch/player.html"><button><?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000" stroke-width="1.5"><path d="M6.90588 4.53682C6.50592 4.2998 6 4.58808 6 5.05299V18.947C6 19.4119 6.50592 19.7002 6.90588 19.4632L18.629 12.5162C19.0211 12.2838 19.0211 11.7162 18.629 11.4838L6.90588 4.53682Z" fill="#ffffff" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></a>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="channeldetails">
-                <div class="channelnumber"><p>103</p></div>
-                <img class="channelicon" src="assets/img/channelicons/cnextras.png" alt="yeah">
-                <li>
-                    <h1>CN Extras</h1>
-                </li>
-            </div>
-            <div class="buttoncontainer">
-                <a href="watch/player.html"><button><?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000" stroke-width="1.5"><path d="M6.90588 4.53682C6.50592 4.2998 6 4.58808 6 5.05299V18.947C6 19.4119 6.50592 19.7002 6.90588 19.4632L18.629 12.5162C19.0211 12.2838 19.0211 11.7162 18.629 11.4838L6.90588 4.53682Z" fill="#ffffff" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></a>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="channeldetails">
-                <div class="channelnumber"><p>104</p></div>
-                <img class="channelicon" src="assets/img/channelicons/pixyl.png" alt="yeah">
-                <li>
-                    <h1>pixyl</h1>
-                </li>
-            </div>
-            <div class="buttoncontainer">
-                <a href="watch/player.html"><button><?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000" stroke-width="1.5"><path d="M6.90588 4.53682C6.50592 4.2998 6 4.58808 6 5.05299V18.947C6 19.4119 6.50592 19.7002 6.90588 19.4632L18.629 12.5162C19.0211 12.2838 19.0211 11.7162 18.629 11.4838L6.90588 4.53682Z" fill="#ffffff" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></a>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="channeldetails">
-                <div class="channelnumber"><p>300</p></div>
-                <img class="channelicon" src="assets/img/channelicons/cnu.png" alt="yeah">
-                <li>
-                    <h1>CN U</h1>
-                </li>
-            </div>
-            <div class="buttoncontainer">
-                <a href="watch/player.html"><button><?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000" stroke-width="1.5"><path d="M6.90588 4.53682C6.50592 4.2998 6 4.58808 6 5.05299V18.947C6 19.4119 6.50592 19.7002 6.90588 19.4632L18.629 12.5162C19.0211 12.2838 19.0211 11.7162 18.629 11.4838L6.90588 4.53682Z" fill="#ffffff" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></a>
-            </div>
+        </template>
         </div>
     </div>
-
-        
-
-    </script>
-    <script src="assets/js/modal.js"></script>
-    <script src="assets/js/search.js"></script>
 </body>
 </html>
