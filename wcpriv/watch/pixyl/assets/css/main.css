@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #1B1F39;
+    margin: 0;
+    color: rgba(244, 244, 244, 1);
+    font-family: "Tomorrow", sans-serif;
+}
+
+.versioninfo {
+    position: fixed;
+    bottom: 4px;
+    right: 32px;
+    float: right;
+    z-index: 2;
+
+    color:rgba(255, 255, 255, 0.2);
+    font-family: "Tomorrow", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    user-select: none;
+    transition: 0.1s;
+}
+
+.versioninfo:hover{color: #EC4EBC; transition: 0.1s; cursor:help}
+
+.topbar {
+    display: grid;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 24px;
+    height: 48px;
+    padding-block: 8px;
+    padding-inline: 24px;
+    background-color: #0C0F28;
+    z-index: 1;
+}
+
+.topbar p {
+    font-size: 16px;
+    line-height: 0px;
+}
+
+.menubutton {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    width: 32px;
+    height: 32px;
+    stroke:#5F6368;
+    transition: 0.2s;
+    
+}
+
+.menubutton:hover {
+    stroke:#EC4EBC;
+    cursor: pointer;
+    transition: 0.2s
+}
+
+.main {
+    position: relative;
+    margin: auto;
+    gap: 12px;
+    padding: 24px;
+    padding-top: 70px;
+    max-width: 640px;
+}
+
+.player {
+    margin-bottom: 12px;
+    border-radius: 12px;
+}
+
+.info {
+    background-color: #0C0F28;
+    padding: 24px;
+    max-width: 640px;
+    min-width: 240px;
+}
+
+.info h1 {
+    font-size: 24px;
+}
+
+.info p {
+    font-size: 16px;
+}
+
+.info img {
+    width: 16px;
+}
