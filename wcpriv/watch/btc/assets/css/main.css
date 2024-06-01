@@ -1,10 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@font-face {
+    font-family: 'Carlton Logo';
+    src: url('../font/CarltonLogo.woff2') format('woff2'),
+        url('../font/CarltonLogo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 body {
-    background-color: black;
+    background-image: url("../img/bg.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
     margin: 0;
     color: rgba(244, 244, 244, 1);
-    font-family: "DM Sans", sans-serif;
+    font-family: 'Carlton Logo';
+    font-weight: normal;
+    font-style: normal;
 }
 
 .versioninfo {
@@ -15,7 +29,6 @@ body {
     z-index: 2;
 
     color:rgba(255, 255, 255, 0.2);
-    font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
