@@ -38,6 +38,7 @@ body {
     padding-inline: 24px;
     background-color: rgba(14, 16, 19, 1);
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .topbar p {

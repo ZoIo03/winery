@@ -1,12 +1,5 @@
 [
     {
-        "channel_number": "000",
-        "name": "webchnl. events",
-        "icon": "default",
-        "group_icon": "none",
-        "link": "watch/player"
-    },
-    {
         "channel_number": "001",
         "name": "pixyl",
         "icon": "pixyl",
@@ -38,7 +31,7 @@
         "channel_number": "005",
         "name": "Debug",
         "icon": "debug",
-        "group_icon": "none",
+        "group_icon": "ong",
         "link": "watch/debug"
     },
     {
@@ -98,6 +91,13 @@
         "link": "watch/boom"
     },
     {
+        "channel_number": "014",
+        "name": "TTMG",
+        "icon": "ttmg",
+        "group_icon": "none",
+        "link": "watch/ttmg"
+    },
+    {
         "channel_number": "016",
         "name": "EVO",
         "icon": "evo",
@@ -133,13 +133,6 @@
         "link": "watch/boxmedia"
     },
     {
-        "channel_number": "070",
-        "name": "TTMG",
-        "icon": "ttmg",
-        "group_icon": "none",
-        "link": "watch/ttmg"
-    },
-    {
         "channel_number": "071",
         "name": "Hilarity",
         "icon": "hilarity",
@@ -152,6 +145,13 @@
         "icon": "toomania",
         "group_icon": "none",
         "link": "watch/toomania"
+    },
+    {
+        "channel_number": "073",
+        "name": "ONIX",
+        "icon": "onix",
+        "group_icon": "none",
+        "link": "watch/onix"
     },
     {
         "channel_number": "101",
