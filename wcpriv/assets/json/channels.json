@@ -98,6 +98,13 @@
         "link": "watch/ttmg"
     },
     {
+        "channel_number": "015",
+        "name": "soul",
+        "icon": "soul",
+        "group_icon": "none",
+        "link": "watch/soul"
+    },
+    {
         "channel_number": "016",
         "name": "EVO",
         "icon": "evo",

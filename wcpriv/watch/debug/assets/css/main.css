@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 body {
-    background-color: black;
+    background-image: url("https://cdn.discordapp.com/attachments/1206331953888886784/1246863048983973968/backgroundvideo.gif?ex=665def34&is=665c9db4&hm=633e026443c0abdc345a88e2f48c0ec6bf68d1f6c7355a36ef1a8d8fcad26911&");  
     margin: 0;
     color: rgba(244, 244, 244, 1);
     font-family: "DM Sans", sans-serif;
@@ -78,7 +78,7 @@ body {
 }
 
 .info {
-    background-color: rgba(14, 16, 19, 1);
+    background-color: #5f61e8;
     border-radius: 12px;
     padding: 24px;
     max-width: 640px;
