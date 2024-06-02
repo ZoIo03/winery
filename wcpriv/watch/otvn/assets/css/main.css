@@ -1,10 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@font-face {
+    font-family: 'Zen Dots';
+    src: url('../font/ZenDots-Regular.woff2') format('woff2'),
+        url('../font/ZenDots-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 body {
-    background-color: black;
+    background-image: url("../img/bg.gif");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0;
     color: rgba(244, 244, 244, 1);
-    font-family: "DM Sans", sans-serif;
+    font-family: 'Zen Dots';
 }
 
 .versioninfo {
@@ -15,7 +26,6 @@ body {
     z-index: 2;
 
     color:rgba(255, 255, 255, 0.2);
-    font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -36,7 +46,7 @@ body {
     height: 48px;
     padding-block: 8px;
     padding-inline: 24px;
-    background-color: rgba(14, 16, 19, 1);
+    background-color: rgb(0 0 0);
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
@@ -52,13 +62,13 @@ body {
     border: 0;
     width: 32px;
     height: 32px;
-    stroke:#5F6368;
+    stroke:#ffffff;
     transition: 0.2s;
     
 }
 
 .menubutton:hover {
-    stroke:#9a0c0c;
+    stroke:#ffffff;
     cursor: pointer;
     transition: 0.2s
 }
@@ -78,7 +88,7 @@ body {
 }
 
 .info {
-    background-color: rgba(14, 16, 19, 1);
+    background-color: rgb(0 0 0);
     border-radius: 12px;
     padding: 24px;
     max-width: 640px;
