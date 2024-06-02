@@ -134,10 +134,10 @@
     },
     {
         "channel_number": "069",
-        "name": "BoxMedia",
-        "icon": "boxmedia",
+        "name": "CN Plus",
+        "icon": "cnplus",
         "group_icon": "none",
-        "link": "watch/boxmedia"
+        "link": "watch/cnplus"
     },
     {
         "channel_number": "071",

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>webchnl » CN Too</title>
+    <meta content="webchnl" property="og:title" />
+    <meta content="webchnl alpha 1" property="og:description" />
+    <meta content="https://pixyl.live/webchnl" property="og:url" />
+    <meta content="assets/img/embed_banner.png" property="og:image" />
+    <meta content="#0e1013" data-react-helmet="true" name="theme-color" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="https://pixyl.live/wcpriv/assets/svg/webchnl_icon.svg">
+    <link rel="manifest" href="https://pixyl.live/wcpriv/manifest.json">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vime/core@^5/themes/default.css"/>
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="versioninfo">
+        <p>webchnl alpha 1</p>
+    </div>
+
+    <div class="topbar">
+        <a href="https://pixyl.live/wcpriv"><button class="menubutton"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button></a>
+        <p>CN Too</p>
+    </div>
+
+    <div class="main">
+        <div class="player">
+            <body>
+                <video id="my-video" class="video-js vjs-fluid" controls preload="auto" width="640" height="264" poster="http://150.136.161.85:8080/memfs/id.jpg" data-setup="{}">
+                    <source src="https://wchls1.pixyl.live/memfs/id.m3u8" type="application/x-mpegURL">
+                    <source src="https://wchls1.pixyl.live/memfs/a17171cf-805c-40e7-add7-84fca759d3ba.m3u8" type="application/x-mpegURL">
+                  <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that<a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+                </video>
+        </div>      
+
+        <div class="info">
+            <h1>About CN Too</h1>
+            <p></p>
+        </div>
+    </div>
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+</body>
+</html>
