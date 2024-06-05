@@ -1,0 +1,216 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: rgba(14, 16, 19, 1);
+} 
+
+.versioninfo {
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+    float: right;
+    z-index: 2;
+
+    color:rgba(255, 255, 255, 0.2);
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    user-select: none;
+}
+
+.modal {
+    padding: 0;
+    width: 350px;
+    height: 400px;
+    background-color: rgba(23, 24, 27, 1);
+    border: 0;
+  }
+  
+  .modal_top {
+    text-align: right;
+    padding: 0;
+  }
+  
+  .modal_top button {
+    background-color: transparent;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    margin-top: -5px;
+  
+    font-family: "DM Sans", sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    color: white;
+    transition: 0.1s;
+    outline: none;
+  }
+  
+  .modal_top button:hover {
+    color: red;
+    font-weight: 300;
+    transition: 0.1s;
+    cursor: pointer;
+  }
+  
+  .modal_content {
+    padding: 10px;
+    color: white;
+  
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .modal_content h1{
+    font-size: 200%;
+    font-weight: 800;
+    text-align: center;
+    transition: 0.1s;
+  }  
+
+  .modal_content h1:hover{
+    color:#ff1111;
+    transition:0.1s
+  }
+
+dialog::backdrop {
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.topbar {
+    z-index: 1;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    height: 50px;
+    font-size: 0;
+}
+
+.search {
+    width: calc(100% - 87px);
+    width: -webkit-calc(100% - 87px);
+    width: -moz-calc(100% - 87px);
+    height: inherit;
+
+    padding-left: 10px;
+
+    background-color: black;
+    border: 0;
+    color:white;
+    outline: none;
+
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.infoButton {
+    width: 75px;
+    height: 52px;
+
+    background-color: rgba(23, 24, 27, 1);
+    border: 0;
+    color: rgba(173, 173, 173, 1);
+
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    outline: none;
+
+    cursor: pointer;
+
+    transition: 0.05s;
+}
+
+.infoButton:hover {
+    background-color: #910202;
+
+    color: #ffffff;
+
+    transition: 0.1s;
+}
+
+.main{
+    margin: 10px;
+
+    list-style-type: none;
+}
+
+/* === main link style === */
+
+.main a {
+    font-family: "DM Sans", sans-serif;
+    font-size: 200%;
+    font-weight: 1000;
+    transition: 0.1s;
+}
+
+.main a:link {color:#ffffff; text-decoration: none;}
+.main a:visited {color:#ffffff; text-decoration: none;}
+.main a:active {color:#ffffff; text-decoration: none;}
+
+.main a:hover {
+    color:#ff1111; 
+    text-decoration: underline; 
+    transition: 0.3s;
+    text-shadow: #ff1111 0px 0 50px;
+    font-size: 250%;
+}
+
+/* custom colors */
+
+.wavecast a:hover {
+    color:#4242f5; 
+    text-shadow: #4242f5 0px 0 50px;
+}
+
+.pixyl a:hover {
+    color:#A456E5; 
+    text-shadow: #A456E5 0px 0 50px;
+}
+
+.ong a:hover {
+    color:#FE00FF; 
+    text-shadow: #FE00FF 0px 0 50px;
+}
+
+.svg {
+    width: 20px;
+    padding-bottom: 1.5px;
+}
+
+.ong .svg {
+    width: 20px;
+    padding-bottom: 7px;
+}
+
+/* search category */
+
+.label {
+    font-size: 0px;
+    position: fixed;
+}
+
+/* version text */
+
+.versionInfo {
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+    float: right;
+    z-index: 2;
+
+    color:rgba(255, 255, 255, 0.2);
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    user-select: none;
+}
