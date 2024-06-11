@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container { display: flex; flex-direction:column; flex-wrap:wrap}
+.logo_container { order: 1; }
+.plyr__video-embed { order: 2; }
+.button_container { order: 3; }
+
+body
+{
+    background: conic-gradient(
+        #20233D 90deg,
+        #1B1F39 90deg 180deg,
+        #20233D 180deg 270deg,
+        #1B1F39 270deg
+    );
+    background-repeat: repeat;
+    background-size: 100px 100px;
+    font-family: "Tomorrow", sans-serif;
+}
+
+.container
+{
+  position: absolute;
+  margin: auto;
+  height:100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #0C0F28;
+}
+
+.topbar
+{
+    display: flex;
+}
+
+.logo_container
+{
+    width: 100%;
+    padding: 12px;
+    padding-right: 0;
+}
+
+.logo
+{
+    height: 24px;
+    margin: 0;
+}
+
+.transition
+{
+    display: none;
+}
+
+.button_container
+{
+    box-ordinal-group: 3;
+    background-color: #EC4EBC;
+    width: 100%;
+    padding: 6px;
+}
+
+.button_container button
+{
+    border-width: 0;
+
+    background-color: #0C0F28;
+    color: white;
+    font-size: 100%;
+    width: 100px;
+    height: 36px;
+    
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.button_container button:hover
+{
+    background-color: #7460E7;
+    cursor:pointer;
+}
