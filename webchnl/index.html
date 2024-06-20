@@ -8,11 +8,52 @@
 </head>
 <body>
     <div class="container">
-        <h1>webchnl.</h1>
-        <p>Over <strong>30</strong> channels accepted.</p>
+        <h1 id="countdown">Loading...</h1>
+  <script>
+    const targetTime = 1718985600; // Unix timestamp
+
+    function getTimeRemaining() {
+      const currentTime = Math.floor(Date.now() / 1000); // Current time in seconds
+      const remainingTime = targetTime - currentTime;
+      return {
+        days: Math.floor(remainingTime / 86400),
+        hours: Math.floor((remainingTime % 86400) / 3600),
+        minutes: Math.floor((remainingTime % 3600) / 60),
+        seconds: Math.floor(remainingTime % 60),
+      };
+    }
+
+    function updateClock() {
+      const timeRemaining = getTimeRemaining();
+      const countdownEl = document.getElementById("countdown");
+
+      countdownEl.innerHTML = `${timeRemaining.days}d ${timeRemaining.hours}h ${timeRemaining.minutes}m ${timeRemaining.seconds}s`;
+
+      if (timeRemaining.days === 0 && timeRemaining.hours === 0 && timeRemaining.minutes === 0 && timeRemaining.seconds === 0) {
+        countdownEl.innerHTML = "Time's Up!";
+        clearInterval(interval);
+      }
+    }
+
+    let startTime = Date.now(); // Get the initial start time
+
+    const interval = setInterval(() => {
+      const elapsedTime = Math.floor((Date.now() - startTime) / 1000); // Time elapsed since start
+      if (elapsedTime >= 1) { // Check for at least 1 second interval
+        updateClock();
+        startTime = Date.now(); // Reset start time for the next interval
+      }
+    }, 1); // Set a minimum interval of 1 millisecond
+  </script>
+  <hr class="solid">
+  <div class="buttons">        
         <form action="tally">
             <button onclick="location.href='https://tally.so/r/mKMPWA'" type="button">Sign Up</button>
         </form>
+        <form action="discord">
+            <button onclick="location.href='https://discord.gg/webchnl'" type="button">Discord</button>
+        </form>
+    </div>
     </div>
 </body>
 </html>
