@@ -1,0 +1,35 @@
+@import url("https://db.onlinewebfonts.com/c/a0e1b1883c0cf520e9c50d0cd91cd0d0?family=Papyrus+W01");
+
+body {
+    background-image: url("../img/dinner.jpg");
+    color:magenta;
+    font-family: "Papyrus W01";
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+center h1 { 
+    animation: woahgoofy 5s infinite;
+}
+
+h1 span { 
+    background-color: green; 
+}
+
+@keyframes woahgoofy {
+    50% {transform: rotate(90deg);}
+  }
+
+marquee {
+    background-color: black;
+    margin-bottom: 12px;
+}
+
+.container_sch {
+    background-color: green; 
+    width: auto;
+    height: 150px;
+}
