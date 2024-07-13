@@ -29,7 +29,7 @@ marquee {
 }
 
 .container_sch {
-    background-color: green; 
+    background: green; 
     width: auto;
     height: 150px;
 }
